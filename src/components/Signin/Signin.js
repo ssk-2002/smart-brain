@@ -18,7 +18,7 @@ class Signin extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3000/signin', {  // Fetch by default makes GET request, in order to have POST request we need to pass an object as 2nd parameter (like we did here)
+    fetch('https://smartbrainbe-30jb.onrender.com/signin', {  // Fetch by default makes GET request, in order to have POST request we need to pass an object as 2nd parameter (like we did here)
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
